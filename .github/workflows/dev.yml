@@ -1,7 +1,7 @@
 name: My project Dev
 
 on:
-  push:
+  pull_request:
     branches:
       - dev
 
