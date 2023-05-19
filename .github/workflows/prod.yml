@@ -3,7 +3,7 @@ name: My project prod
 on:
   pull_request:
     branches:
-      - staging
+      - master
 
 jobs:
   build:
