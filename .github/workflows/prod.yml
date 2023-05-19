@@ -1,29 +1,29 @@
-name: My project prod
+# name: My project prod
 
-on:
-  pull_request:
-    branches:
-      - master
+# on:
+#   pull_request:
+#     branches:
+#       - master
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-    - name: Set up Flutter
-      uses: subosito/flutter-action@v2
+#     steps:
+#     - name: Set up Flutter
+#       uses: subosito/flutter-action@v2
 
-    - name: Check out code
-      uses: actions/checkout@v3
-      with:
-        channel: 'stable' 
+#     - name: Check out code
+#       uses: actions/checkout@v3
+#       with:
+#         channel: 'stable' 
 
         
-    - name: Display Flutter version
-      run: flutter --version
+#     - name: Display Flutter version
+#       run: flutter --version
 
-    - name: Install dependencies
-      run: flutter pub get
+#     - name: Install dependencies
+#       run: flutter pub get
 
-    - name: Build appbundle
-      run: flutter build appbundle
+#     - name: Build appbundle
+#       run: flutter build appbundle
