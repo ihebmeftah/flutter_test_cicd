@@ -1,0 +1,32 @@
+name: Rooly CI
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set up Flutter
+      uses: subosito/flutter-action@v2
+
+    - name: Check out code
+      uses: actions/checkout@v3
+      with:
+        channel: 'stable' 
+
+        
+    - name: Display Flutter version
+      run: flutter --version
+
+    - name: Install dependencies
+      run: flutter pub get
+
+    # - name: Build apk
+    #   run: flutter build apk
+
+    # - name: Build appbundle
+    #   run: flutter build appbundle
