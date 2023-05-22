@@ -12,9 +12,36 @@ dependencies:
   get: 4.6.5
 
 dev_dependencies:
+  flutter_flavorizr:
+
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
+
+flavorizr:
+  flavors:
+#FLAVOR DEV
+    dev:
+      app:
+        name: "app dev"
+      android:
+        applicationId: "com.example.flutter_test_cicd.dev"
+      
+      ios:
+        bundleId: "com.example.flutter_test_cicd.dev"
+
+#FLAVOR PROD
+    prod:
+      app:
+        name: "app prod"
+
+      android:
+        applicationId: "com.example.flutter_test_cicd"
+
+      ios:
+        bundleId: "com.example.flutter_test_cicd"
+
+
 
 flutter:
   uses-material-design: true
