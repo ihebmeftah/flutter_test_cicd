@@ -12,13 +12,16 @@ dependencies:
   get: 4.6.5
 
 dev_dependencies:
-  flutter_flavorizr:
-
+  flutter_flavorizr: ^2.1.6
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
 
 flavorizr:
+  app:
+    android:
+    ios:
+
   flavors:
 #FLAVOR DEV
     dev:
